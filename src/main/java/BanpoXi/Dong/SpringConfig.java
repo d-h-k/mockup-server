@@ -1,17 +1,11 @@
 package BanpoXi.Dong;
 
 
-import BanpoXi.Dong.repository.JdbcMemberRepository;
-import BanpoXi.Dong.repository.JpaMemberRepository;
 import BanpoXi.Dong.repository.MemberRepository;
 import BanpoXi.Dong.repository.MemoryMemberRepository;
 import BanpoXi.Dong.service.MemberService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import javax.persistence.EntityManager;
-import javax.sql.DataSource;
 
 //자바 코드로 직접 스프링 빈 등록하는 방법
 @Configuration
@@ -26,7 +20,7 @@ public class SpringConfig {
     //@Autowired
     //DataSource dataSource;
     //public SpringConfig(DataSource dataSource) {
-        //this.dataSource = dataSource;
+    //this.dataSource = dataSource;
     //}
     /*
     private EntityManager em;

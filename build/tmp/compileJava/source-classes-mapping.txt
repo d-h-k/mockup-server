@@ -1,12 +1,3 @@
-BanpoXi/Dong/controller/HelloController.java
- BanpoXi.Dong.controller.HelloController
- BanpoXi.Dong.controller.HelloController$Hello
-BanpoXi/Dong/controller/MemberController.java
- BanpoXi.Dong.controller.MemberController
-BanpoXi/Dong/repository/JpaMemberRepository.java
- BanpoXi.Dong.repository.JpaMemberRepository
-BanpoXi/Dong/domain/Member.java
- BanpoXi.Dong.domain.Member
 BanpoXi/Dong/controller/MemberForm.java
  BanpoXi.Dong.controller.MemberForm
 BanpoXi/Dong/DongApplication.java
@@ -15,11 +6,20 @@ BanpoXi/Dong/repository/SpringDataJpaMemberRepository.java
  BanpoXi.Dong.repository.SpringDataJpaMemberRepository
 BanpoXi/Dong/repository/MemberRepository.java
  BanpoXi.Dong.repository.MemberRepository
-BanpoXi/Dong/service/MemberService.java
- BanpoXi.Dong.service.MemberService
+BanpoXi/Dong/controller/HelloController.java
+ BanpoXi.Dong.controller.HelloController
+ BanpoXi.Dong.controller.HelloController$Hello
 BanpoXi/Dong/SpringConfig.java
  BanpoXi.Dong.SpringConfig
+BanpoXi/Dong/controller/MemberController.java
+ BanpoXi.Dong.controller.MemberController
+BanpoXi/Dong/repository/JpaMemberRepository.java
+ BanpoXi.Dong.repository.JpaMemberRepository
 BanpoXi/Dong/controller/HomeController.java
  BanpoXi.Dong.controller.HomeController
 BanpoXi/Dong/repository/MemoryMemberRepository.java
  BanpoXi.Dong.repository.MemoryMemberRepository
+BanpoXi/Dong/service/MemberService.java
+ BanpoXi.Dong.service.MemberService
+BanpoXi/Dong/domain/Member.java
+ BanpoXi.Dong.domain.Member

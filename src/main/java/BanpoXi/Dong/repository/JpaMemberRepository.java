@@ -3,7 +3,6 @@ package BanpoXi.Dong.repository;
 import BanpoXi.Dong.domain.Member;
 
 import javax.persistence.EntityManager;
-import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
@@ -26,7 +25,7 @@ public class JpaMemberRepository implements MemberRepository {
 
     @Override
     public Optional<Member> findById(Long id) {
-        Member member =  em.find(Member.class, id);
+        Member member = em.find(Member.class, id);
         return Optional.ofNullable(member);
     }
 
@@ -35,8 +34,8 @@ public class JpaMemberRepository implements MemberRepository {
         // JPL이라는 객체지향 쿼리언어 쓰야함
         // :name >>  JPQL  ; 큐엘스트링 >>  jpa  에서 쓰는 sql 문 문법
         //제이피에이에서 받은 필드값을 넣을때는
-        List<Member> result  = em.createQuery("select m from Member m where m.name = :name", Member.class)
-                .setParameter("name",name)
+        List<Member> result = em.createQuery("select m from Member m where m.name = :name", Member.class)
+                .setParameter("name", name)
                 .getResultList();
         return result.stream().findAny();
     }
