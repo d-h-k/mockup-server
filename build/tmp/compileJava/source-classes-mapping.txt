@@ -23,3 +23,9 @@ BanpoXi/Dong/service/MemberService.java
  BanpoXi.Dong.service.MemberService
 BanpoXi/Dong/domain/Member.java
  BanpoXi.Dong.domain.Member
+BanpoXi/Dong/controller/LogController.java
+ BanpoXi.Dong.controller.LogController
+BanpoXi/Dong/domain/Card.java
+ BanpoXi.Dong.domain.Card
+BanpoXi/Dong/controller/BoardController.java
+ BanpoXi.Dong.controller.BoardController
