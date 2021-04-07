@@ -15,15 +15,11 @@ BanpoXi/Dong/repository/SpringDataJpaMemberRepository.java
  BanpoXi.Dong.repository.SpringDataJpaMemberRepository
 BanpoXi/Dong/repository/MemberRepository.java
  BanpoXi.Dong.repository.MemberRepository
-BanpoXi/Dong/repository/JdbcTemplateMemberRepository.java
- BanpoXi.Dong.repository.JdbcTemplateMemberRepository
+BanpoXi/Dong/service/MemberService.java
+ BanpoXi.Dong.service.MemberService
 BanpoXi/Dong/SpringConfig.java
  BanpoXi.Dong.SpringConfig
 BanpoXi/Dong/controller/HomeController.java
  BanpoXi.Dong.controller.HomeController
 BanpoXi/Dong/repository/MemoryMemberRepository.java
  BanpoXi.Dong.repository.MemoryMemberRepository
-BanpoXi/Dong/service/MemberService.java
- BanpoXi.Dong.service.MemberService
-BanpoXi/Dong/repository/JdbcMemberRepository.java
- BanpoXi.Dong.repository.JdbcMemberRepository
