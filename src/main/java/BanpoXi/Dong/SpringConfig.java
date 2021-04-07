@@ -4,6 +4,7 @@ package BanpoXi.Dong;
 import BanpoXi.Dong.repository.JdbcMemberRepository;
 import BanpoXi.Dong.repository.JpaMemberRepository;
 import BanpoXi.Dong.repository.MemberRepository;
+import BanpoXi.Dong.repository.MemoryMemberRepository;
 import BanpoXi.Dong.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -42,7 +43,7 @@ public class SpringConfig {
 
     @Bean
     public MemberRepository memberRepository() {
-        //return new MemoryMemberRepository();
+        return new MemoryMemberRepository();
         //return new JdbcMemberRepository(dataSource);
         // 다른 어떤 코드도 변경하지 않은상태에서
         // 인터페이스 구현체를 만들고 확장한다음에 빈만 새로 넣어주고, 컨피큐레이션 돌려보면?!
