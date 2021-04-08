@@ -97,14 +97,15 @@ public class BoardController {
 
 
     //포스트 이동	POST	/board/{id}?move=#	(todo-prog-done) 간 이동
-    @PostMapping("/{id}/?move={category}")
-    public void move(@PathVariable("id") int id, @RequestParam("move") String category ) {
+    @PostMapping("/{id}")
+    public Card move(@PathVariable("id") int id, @RequestParam("move") String category ) {
         List<Card> todoLists = new ArrayList<>();
         todoLists.add(new Card(id, "민초아몬드", "마시쪙민초", "TODO"));
         todoLists.add(new Card(2, "아반떼와횬대차", "테슬라사라", "TODO"));
         todoLists.add(new Card(8, "해리포터", "조앤k롤링", "TODO"));
         Card card = todoLists.get(0);
-        card.setCategory("PROGRESS");
+        card.setCategory(category);
+        return card;
     }
 
 
