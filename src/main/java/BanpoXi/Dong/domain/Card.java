@@ -1,82 +1,56 @@
 package BanpoXi.Dong.domain;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
+
 import java.time.LocalDateTime;
 
 public class Card {
-    int id;
-    String title;
-    String contents;
-    String category;
-    String dateTime;
-    boolean isDeleted;
-    int order;
 
-    public Card() {
+    @Id
+    private Long id;
+    private String title;
+    private String contents;
+    private String category;
 
+    @Column(value = "date_time")
+    private LocalDateTime dateTime;
+    @Column(value = "is_deleted")
+    private int isDeleted;
+
+    protected Card() {
     }
 
-    public Card(int id, String title, String contents, String category) {
-        this.id = id;
+    public Card(String title, String contents, String category) {
         this.title = title;
         this.contents = contents;
         this.category = category;
-        this.dateTime = LocalDateTime.now().toString();
+        this.dateTime = LocalDateTime.now();
+        this.isDeleted = 1;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
     public String getContents() {
         return contents;
-    }
-
-    public void setContents(String contents) {
-        this.contents = contents;
     }
 
     public String getCategory() {
         return category;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
-    public String getDateTime() {
+    public LocalDateTime getDateTime() {
         return dateTime;
     }
 
-    public void setDateTime(String dateTime) {
-        this.dateTime = dateTime;
-    }
-
-    public boolean isDeleted() {
+    public int getIsDeleted() {
         return isDeleted;
-    }
-
-    public void setDeleted(boolean deleted) {
-        isDeleted = deleted;
-    }
-
-    public int getOrder() {
-        return order;
-    }
-
-    public void setOrder(int order) {
-        this.order = order;
     }
 
     @Override
@@ -88,7 +62,6 @@ public class Card {
                 ", category='" + category + '\'' +
                 ", dateTime='" + LocalDateTime.now().toString() + '\'' +
                 ", isDeleted=" + isDeleted +
-                ", order=" + order +
                 '}';
     }
 }
