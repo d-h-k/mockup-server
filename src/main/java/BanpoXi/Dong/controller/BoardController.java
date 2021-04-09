@@ -18,10 +18,10 @@ public class BoardController {
     }
 
     @PostMapping("/lists")
-    public boolean add(@RequestBody CardDto cardDto) {
+    public Card add(@RequestBody CardDto cardDto) {
         Card card = cardDto.toEntity();
-        cardRepository.save(card);
-        return true;
+        //cardRepository.save(card);
+        return card;
     }
 
 

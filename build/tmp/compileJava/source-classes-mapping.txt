@@ -1,10 +1,10 @@
 BanpoXi/Dong/DongApplication.java
  BanpoXi.Dong.DongApplication
-BanpoXi/Dong/repository/CardRepository.java
- BanpoXi.Dong.repository.CardRepository
-BanpoXi/Dong/domain/CardDto.java
- BanpoXi.Dong.domain.CardDto
 BanpoXi/Dong/domain/Card.java
  BanpoXi.Dong.domain.Card
+BanpoXi/Dong/domain/CardDto.java
+ BanpoXi.Dong.domain.CardDto
+BanpoXi/Dong/repository/CardRepository.java
+ BanpoXi.Dong.repository.CardRepository
 BanpoXi/Dong/controller/BoardController.java
  BanpoXi.Dong.controller.BoardController
